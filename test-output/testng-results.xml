@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="15" ignored="0" total="35" passed="20">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="25910" started-at="2020-02-10T19:44:37Z" finished-at="2020-02-10T19:45:03Z">
+    <groups>
+    </groups>
+    <test name="RestAPITest" duration-ms="25910" started-at="2020-02-10T19:44:37Z" finished-at="2020-02-10T19:45:03Z">
+      <class name="com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="setup" is-config="true" duration-ms="4" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="deleteEmployee()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="deleteEmployee" is-config="true" duration-ms="4266" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployee -->
+        <test-method status="FAIL" signature="checkContentType()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="checkContentType" duration-ms="2" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<application/json;charset=utf-8> but was:<text/html; charset=UTF-8>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<application/json;charset=utf-8> but was:<text/html; charset=UTF-8>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+at com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record.checkContentType(TC005_Delete_Employee_Record.java:71)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentType -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="tearDown" is-config="true" duration-ms="2" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="checkResposeBody()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="checkResposeBody" duration-ms="3" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<false> but was:<true>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
+at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:364)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:80)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:185)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:192)
+at com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record.checkResposeBody(TC005_Delete_Employee_Record.java:51)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResposeBody -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkStatusCode()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="checkStatusCode" duration-ms="1" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="checkcontentEncoding()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="checkcontentEncoding" duration-ms="2" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<null> but was:<gzip>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<null> but was:<gzip>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+at com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record.checkcontentEncoding(TC005_Delete_Employee_Record.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcontentEncoding -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="checkserverType()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="checkserverType" duration-ms="2" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<nginx/1.16.0> but was:<nginx/1.14.1>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<nginx/1.16.0> but was:<nginx/1.14.1>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+at com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record.checkserverType(TC005_Delete_Employee_Record.java:77)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkserverType -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkstatusLine()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="checkstatusLine" duration-ms="2" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkstatusLine -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record@5c3bd550]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record -->
+      <class name="com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="setup" is-config="true" duration-ms="26" started-at="2020-02-10T19:44:37Z" finished-at="2020-02-10T19:44:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createEmployee()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="createEmployee" is-config="true" duration-ms="7159" started-at="2020-02-10T19:44:37Z" finished-at="2020-02-10T19:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEmployee -->
+        <test-method status="FAIL" signature="checkContentType()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="checkContentType" duration-ms="14" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:44Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<application/json;charset=utf-8> but was:<text/html; charset=UTF-8>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<application/json;charset=utf-8> but was:<text/html; charset=UTF-8>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+at com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record.checkContentType(TC003_Post_Employee_Record.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentType -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkResposeBody()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="checkResposeBody" duration-ms="15" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResposeBody -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkStatusCode()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="checkStatusCode" duration-ms="2" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="checkcontentEncoding()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="checkcontentEncoding" duration-ms="2" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:44Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<null> but was:<gzip>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<null> but was:<gzip>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+at com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record.checkcontentEncoding(TC003_Post_Employee_Record.java:93)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcontentEncoding -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="checkserverType()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="checkserverType" duration-ms="2" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:44Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<nginx/1.16.0> but was:<nginx/1.14.1>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<nginx/1.16.0> but was:<nginx/1.14.1>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+at com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record.checkserverType(TC003_Post_Employee_Record.java:87)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkserverType -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkstatusLine()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="checkstatusLine" duration-ms="1" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkstatusLine -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record@1bce4f0a]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record -->
+      <class name="com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="setup" is-config="true" duration-ms="3" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getAllEmployees()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="getAllEmployees" is-config="true" duration-ms="57" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllEmployees -->
+        <test-method status="PASS" signature="checkContentLenght()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="checkContentLenght" duration-ms="0" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentLenght -->
+        <test-method status="FAIL" signature="checkContentType()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="checkContentType" duration-ms="1" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<application/json;charset=utf-8> but was:<text/html; charset=UTF-8>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<application/json;charset=utf-8> but was:<text/html; charset=UTF-8>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+at com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees.checkContentType(TC001_Get_All_Employees.java:80)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentType -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkCookies()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="checkCookies" duration-ms="1" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCookies -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkResponseTime()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="checkResponseTime" duration-ms="2" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseTime -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkResposeBody()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="checkResposeBody" duration-ms="2" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResposeBody -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkStatusCode()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="checkStatusCode" duration-ms="1" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkcontentEncoding()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="checkcontentEncoding" duration-ms="2" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcontentEncoding -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="checkserverType()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="checkserverType" duration-ms="2" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<nginx/1.16.0> but was:<nginx/1.14.1>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<nginx/1.16.0> but was:<nginx/1.14.1>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+at com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees.checkserverType(TC001_Get_All_Employees.java:89)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkserverType -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkstatusLine()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="checkstatusLine" duration-ms="0" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkstatusLine -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees@91161c7]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees -->
+      <class name="com.qa.EmployeeAPI.AppTest">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:com.qa.EmployeeAPI.AppTest@6a4f787b]" name="testApp" duration-ms="2" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApp -->
+      </class> <!-- com.qa.EmployeeAPI.AppTest -->
+      <class name="com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="setup" is-config="true" duration-ms="2" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getEmployeeData()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="getEmployeeData" is-config="true" duration-ms="7879" started-at="2020-02-10T19:44:55Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployeeData -->
+        <test-method status="PASS" signature="checkContentLenght()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="checkContentLenght" duration-ms="2" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentLenght -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkContentType()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="checkContentType" duration-ms="2" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentType -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkResponseTime()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="checkResponseTime" duration-ms="2" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseTime -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="tearDown" is-config="true" duration-ms="2" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="checkResposeBody()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="checkResposeBody" duration-ms="3" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.lang.String.contains(String.java:2133)
+at com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record.checkResposeBody(TC002_Get_Single_Employee_Record.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResposeBody -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkStatusCode()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="checkStatusCode" duration-ms="2" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="tearDown" is-config="true" duration-ms="2" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="checkserverType()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="checkserverType" duration-ms="1" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<nginx/1.16.0> but was:<nginx/1.14.1>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<nginx/1.16.0> but was:<nginx/1.14.1>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+at com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record.checkserverType(TC002_Get_Single_Employee_Record.java:68)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkserverType -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="tearDown" is-config="true" duration-ms="2" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkstatusLine()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="checkstatusLine" duration-ms="2" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkstatusLine -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record@604ed9f0]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-10T19:45:03Z" finished-at="2020-02-10T19:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record -->
+      <class name="com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="setup" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="updateEmployee()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="updateEmployee" is-config="true" duration-ms="5998" started-at="2020-02-10T19:44:44Z" finished-at="2020-02-10T19:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployee -->
+        <test-method status="FAIL" signature="checkContentType()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="checkContentType" duration-ms="3" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:50Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<application/json;charset=utf-8> but was:<text/html; charset=UTF-8>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<application/json;charset=utf-8> but was:<text/html; charset=UTF-8>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+at com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record.checkContentType(TC004_Put_Employee_Record.java:89)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentType -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="tearDown" is-config="true" duration-ms="2" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="checkResposeBody()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="checkResposeBody" duration-ms="4" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:50Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<false> but was:<true>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
+at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:364)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:80)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:185)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:192)
+at com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record.checkResposeBody(TC004_Put_Employee_Record.java:65)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResposeBody -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkStatusCode()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="checkStatusCode" duration-ms="2" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="checkcontentEncoding()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="checkcontentEncoding" duration-ms="2" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:50Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<null> but was:<gzip>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<null> but was:<gzip>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+at com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record.checkcontentEncoding(TC004_Put_Employee_Record.java:103)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcontentEncoding -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="checkserverType()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="checkserverType" duration-ms="2" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:50Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<nginx/1.16.0> but was:<nginx/1.14.1>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<nginx/1.16.0> but was:<nginx/1.14.1>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
+at com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record.checkserverType(TC004_Put_Employee_Record.java:96)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkserverType -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="tearDown" is-config="true" duration-ms="11" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="checkstatusLine()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="checkstatusLine" duration-ms="1" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkstatusLine -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record@5e3a8624]" name="tearDown" is-config="true" duration-ms="4" started-at="2020-02-10T19:44:50Z" finished-at="2020-02-10T19:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record -->
+    </test> <!-- RestAPITest -->
+  </suite> <!-- Suite -->
+</testng-results>

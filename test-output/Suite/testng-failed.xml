@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.qa.EmployeeAPI.Utility.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="RestAPITest(failed)">
+    <classes>
+      <class name="com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record">
+        <methods>
+          <include name="setup"/>
+          <include name="checkserverType"/>
+          <include name="tearDown"/>
+          <include name="createEmployee"/>
+          <include name="checkContentType"/>
+          <include name="checkcontentEncoding"/>
+        </methods>
+      </class> <!-- com.qa.EmployeeAPI.TestCase.TC003_Post_Employee_Record -->
+      <class name="com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record">
+        <methods>
+          <include name="checkContentType"/>
+          <include name="checkcontentEncoding"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="checkResposeBody"/>
+          <include name="checkserverType"/>
+          <include name="updateEmployee"/>
+        </methods>
+      </class> <!-- com.qa.EmployeeAPI.TestCase.TC004_Put_Employee_Record -->
+      <class name="com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="getAllEmployees"/>
+          <include name="checkContentType"/>
+          <include name="checkserverType"/>
+        </methods>
+      </class> <!-- com.qa.EmployeeAPI.TestCase.TC001_Get_All_Employees -->
+      <class name="com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="checkResposeBody"/>
+          <include name="checkserverType"/>
+          <include name="getEmployeeData"/>
+        </methods>
+      </class> <!-- com.qa.EmployeeAPI.TestCase.TC002_Get_Single_Employee_Record -->
+      <class name="com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record">
+        <methods>
+          <include name="setup"/>
+          <include name="checkResposeBody"/>
+          <include name="tearDown"/>
+          <include name="deleteEmployee"/>
+          <include name="checkContentType"/>
+          <include name="checkcontentEncoding"/>
+          <include name="checkserverType"/>
+        </methods>
+      </class> <!-- com.qa.EmployeeAPI.TestCase.TC005_Delete_Employee_Record -->
+    </classes>
+  </test> <!-- RestAPITest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
